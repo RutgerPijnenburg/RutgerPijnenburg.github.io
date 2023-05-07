@@ -1,3 +1,3 @@
 # RutgerPijnenburg.github.io
 Portfolio of Rutger Pijnenburg
-![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
+![68747470733a2f2f6779617a6f2e636f6d2f65623563353734316236613961313663363932313730613431613439633835382e706e67](https://user-images.githubusercontent.com/132466058/236674375-563fc2e9-d844-4dd4-82bd-e33d678efa16.png)
