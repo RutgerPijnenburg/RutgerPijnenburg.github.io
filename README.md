@@ -1,3 +1,4 @@
+remote_theme: minima
 Test
 ======
 ======
