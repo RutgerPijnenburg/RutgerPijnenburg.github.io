@@ -1,5 +1,5 @@
 <marquee
-  direction="down"
+<!--   direction="down" -->
   width="500"
   height="500"
   behavior="alternate"
