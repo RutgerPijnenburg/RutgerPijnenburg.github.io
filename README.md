@@ -1,4 +1,4 @@
-<marquee> 
+<marquee
   direction="down"
   width="500"
   height="500"
