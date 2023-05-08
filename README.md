@@ -15,3 +15,12 @@
  test test test test
  <section> test2 </section>
 </div>
+
+
+<div role="banner">
+  <a href="#main" id="skipToMain" class="skiptocontent">Skip To main content</a>
+  <img src="images/w3c.png" alt="W3C Logo" />
+  <h1>ARIA Landmarks</h1>
+  <p>Identifying page subsections for easy navigation</p>
+  <nav>…</nav>
+</div>
