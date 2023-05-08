@@ -14,6 +14,9 @@ background-color= tomato;
  <a href="https://rutgerpijnenburg.github.io/Projects/">Projects</a>
  </p>
  
- <nav>
-  test
-  </nav>
+ <div role="region" aria-labelledby="region-heading">
+  <h2 id="region-heading">
+    This heading's `id` attribute helps this region have an accessible name
+  </h2>
+  <!-- region content -->
+</div>
