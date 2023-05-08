@@ -12,5 +12,6 @@
   <h2 id="region-heading">
     This heading's `id` attribute helps this region have an accessible name
   </h2>
-  <!-- region content -->
+ test test test test
+ <section> test2 </section>
 </div>
