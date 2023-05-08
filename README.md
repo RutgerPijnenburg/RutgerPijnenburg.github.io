@@ -13,13 +13,6 @@
  <a href="https://rutgerpijnenburg.github.io/Projects/">Projects</a>
  </p>
  
- 
-<head>
-<style>
-.myDiv {
-  border: 100px outset red;
-  background-color: lightblue;    
-  text-align: center;
-}
-</style>
-</head>
+ <nav>
+  test
+  </nav>
