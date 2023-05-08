@@ -8,4 +8,8 @@
  <a href="https://rutgerpijnenburg.github.io/Projects/">Projects</a>
  </p>
  
- <section> test </section>
+ <section> 
+ <p> test </p>
+ <p> test </p>
+ <p> test </p>
+ </section>
