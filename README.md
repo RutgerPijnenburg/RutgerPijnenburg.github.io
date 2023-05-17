@@ -42,14 +42,6 @@
           >Eindhoven, The Netherlands</a
         >
       </div>
-      <div>
-        <a href="mailto:r.a.pijnenburg@student.tue.nl"
-          >r.a.pijnenburg@student.tue.nl</a
-        >
-      </div>
-      <div class="Phone">
-        <a target="_blank" href="tel:3640800253">+3640800253</a>
-      </div>
       <div class="additionalcontact">
         <a
           target="_blank"
