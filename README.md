@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rutger Pijnenburg</title>
-    <link rel="stylesheet" type="text/css" href="/Styles/Header.css" />
+    <link rel="stylesheet" type="text/css" href="/Styles/Header.css](https://github.com/RutgerPijnenburg/RutgerPijnenburg.github.io/blob/main/Styles/Header.css"/>
     <link rel="stylesheet" type="text/css" href="/Styles/general.css" />
     <link rel="stylesheet" type="text/css" href="/Styles/images.css" />
     <link rel="stylesheet" type="text/css" href="/Styles/Sections.css" />
