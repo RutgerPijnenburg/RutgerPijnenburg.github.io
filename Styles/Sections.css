@@ -1,21 +1,168 @@
+.Starting-video{
+    background-color: pink;
+    position: relative;
+}
+
 .Introduction{
-    background-color: lightblue;
-    height: 250px;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: space-between;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 30px 30px;
+    padding-right: 80px;
+    margin-bottom: 80px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+}
+
+.Intro-Title{
+    flex: 1;
+    padding-bottom: 40%;
+    align-items: center;
+}
+
+.Intro-text{
+    flex: 1;
+}
+
+
+@media (max-width: 950px) {
+    .Introduction-3D{
+        height: 250px;
+    }
+    .Introduction{
+        height: 200px;
+        padding: 30px 25px;
+    }
+    .Intro-Title{
+        flex: 1;
+        padding-bottom: 15%;
+    }
+}
+
+.Introduction-3D:hover .Info3D{
+    border-radius: 200px;
+    opacity: 1;
+}
+
+.Info3D{
+    cursor: pointer;
+    position: absolute;
+    border-radius: 20px;
+    right: -10px;
+    bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 0px 9px;
+    padding-bottom: 1px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.Info3D:hover .Information3D{
+    opacity: 1;
+}
+
+.Information3D{
+    background-color: rgba(0, 0, 0, 0.4);
+    right: 25px;
+    font-size: 13px;
+    border-radius: 5px;
+    padding: 0px 3px;
+    bottom: 0px;
+    position: absolute;
+    transition: all 0.4s;
+    opacity: 0;
+    white-space: nowrap;
 }
 
 .Identity{
     background-color: lightpink;
-    height: 250px;
+    height: 300px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0px 50px 0px;
 }
 
+
+
+.Identity-textpart{
+    background-color: red;
+    width: 40%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 5%;
+    border-radius: 30px;
+}
+
+.Identity-image{
+    width: 40%;
+    position: absolute;
+    right: 10%;
+}
+
+.Introduction-3D{
+    height: 300px;
+    width: 100%;
+    margin-left: 5%;
+}
+
+.Identity-text{
+    padding: 20px;
+    flex: 1;
+}
+.Read-more{
+    padding: 20px;
+    background-color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
 .Vision{
     background-color: lightblue;
-    height: 250px;
+    height: 200px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px 50px 0px;
 }
+
+.Vision-text{
+    flex: 1;
+}
+
+.Vision-Link{
+    flex: 50px;
+}
+
 
 .Projects{
     background-color: lightpink;
-    height: 250px;
+    height: 200px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px 50px 0px;
+}
+
+.Projects-text{
+    flex: 1;
+}
+
+.Projects-Link{
+    flex: 50px;
 }
 
 .Contact{
