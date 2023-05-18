@@ -16,25 +16,83 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <body>
+  </head><body>
     <header class="header">
       <div>
-        <a class="Logo" href="index.html">Rutger Pijnenburg</a>
+        <a class="Logo" href="https://rutgerpijnenburg.com">Rutger Pijnenburg</a>
       </div>
       <div class="headerspacer"></div>
       </div>
       <div class="Navigation">
-        <a href="">Identity</a>
-        <a href="">Vision</a>
-        <a href="">Development</a>
-        <a href="">Projects</a>
+        <a class="Navigation-Identity" href="https://rutgerpijnenburg.com/Identity">Identity</a>
+        <a class="Navigation-Vision" href="https://rutgerpijnenburg.com/Vision">Vision</a>
+        <a class="Navigation-Development" href="https://rutgerpijnenburg.com/Development">
+            Development </a>
+        <a class="Navigation-Projects" href="https://rutgerpijnenburg.com/Projects">Projects</a>
       </div>
     </header>
-    <section class="Introduction">Introduction</section>
-    <section class="Identity">Identity</section>
-    <section class="Vision">Vision</section>
-    <section class="Projects">Projects</section>
+    <div class="Starting-video">
+      <video class="BubbleVideo" src="/Portfolio/images/BubbleVideo4.mp4" autoplay loop muted></video>
+      <div class="Introduction">
+        <div class="Intro-Title">
+          Rutger Pijnenburg</div>
+        <div class="Intro-text">
+          <div>3D-modeller</div>
+          <div>Problem-solver</div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <section class="Identity">
+      <div class="Identity-textpart">
+        
+      <div class="Identity-text">
+        <div class="Identity-title">Identity</div>
+        <div>I want to see different perspectives. 
+          I like trial and error (the iterative design process). 
+          I like thinking. My communication skill is my weakness. 
+          I have a passion for 3D-modelling</div>
+      </div>
+      <div class="Identity-link">
+
+      </div>
+        <a class="Read-more" href="https://rutgerpijnenburg.com/Identity/">Click to read more -></a>
+      </div>
+      </div>
+
+      <div class="Identity-image">
+        <div class="Introduction-3D">
+          <model-viewer interaction-prompt-style="basic" disable-tap auto-rotate auto-rotate-delay=1000 rotation-per-second=10deg disable-zoom src="untitled.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="2">
+          </button>
+        </model-viewer>  
+        <script src="script.js"></script>
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+        <div class="Info3D">i
+          <div class="Information3D">Made with <a target="_blank" href="https://modelviewer.dev">model-viewer</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Vision">
+      <div class="Vision-text">Vision</div>
+      <div class="Vision-link">
+        <a href="https://rutgerpijnenburg.com/Vision/">Click to read more -></a>
+      </div>
+    </section>
+
+    </section>
+    <section class="Projects">
+      <div class="Projects-text">Projects</div>
+      <div class="Projects-link">
+        <a href="https://rutgerpijnenburg.com/Projects/">Click to read more -></a>
+      </div>
+    </section>
+
+
     <section class="Contact">
       <div class="contactname">Rutger Pijnenburg</div>
       <div class="Adress">
@@ -47,9 +105,9 @@
           >r.a.pijnenburg@student.tue.nl</a
         >
       </div>
-<!--       <div class="Phone">
+      <div class="Phone">
         <a target="_blank" href="tel:3640800253">+3640800253</a>
-      </div> -->
+      </div>
       <div class="additionalcontact">
         <a
           target="_blank"
@@ -68,3 +126,4 @@
     </section>
   </body>
 </html>
+
