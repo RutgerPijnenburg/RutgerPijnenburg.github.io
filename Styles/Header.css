@@ -4,37 +4,58 @@
     right: 0;
     top: 0px;
     height: 70px;
-    background-color: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url("/Portfolio/images/Bubbles.png");
+    background-color: aquamarine;
+    /* background-image: url("/Portfolio/images/Bubbles.png"); */
+    z-index: 100;
+    background-position: 0% 65%;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.header::-webkit-scrollbar{
+    height: 1000px;
 }
 
 .Logo{
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 10px 15px;
+    border-radius: 15px;
     width: 150px;
     color: white;
     font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
 }
 
 .Navigation{
     flex: 2;
-    padding-right: 30px;
+    border-radius: 15px;
     display: flex;
     justify-content: space-between;
     text-decoration: none;
-}
-.Navigation a{
-    text-decoration: none;
-    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 12px 25px;
 }
 
-.homeimage{
-    width: 100%;
-    height: 250px;
-}
+
 .headerspacer{
     flex: 1;
+}
+
+.Navigation-Identity, 
+.Navigation-Vision, 
+.Navigation-Development, 
+.Navigation-Projects{
+color: white;
+text-decoration: none;
+transition: all 0.35s;
+}
+
+.Navigation-Identity:hover, 
+.Navigation-Vision:hover, 
+.Navigation-Development:hover, 
+.Navigation-Projects:hover{
+color: rgb(0, 0, 0);
 }
