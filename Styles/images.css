@@ -1,0 +1,57 @@
+.contacticons{
+    width: 30px;
+    cursor: pointer;
+}
+
+.BubbleVideo{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    background-position: 0% 10%;
+    filter: brightness(110%);
+    filter: contrast(1.8);
+}
+
+
+@media (max-width: 950px) {
+    .BubbleVideo{
+        height: 300px;
+    }
+}
+
+.CreativeMech,
+.FITD,
+.Project1,
+.CreativeElectronics{
+    background-color: white;
+    object-fit: cover;
+    height: 290px;
+    width: 100%;
+    margin: 2px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.CreativeMech:hover,
+.FITD:hover,
+.Project1:hover,
+.CreativeElectronics:hover{
+    filter: brightness(0.8);
+}
+
+.CreativeMech:hover CreativeMech-Title{
+    opacity: 0;
+}
+
+@media (max-width: 950px) {
+    .CreativeMech,
+.FITD,
+.Project1,
+.CreativeElectronics{
+    object-fit: cover;
+    height: 130px;
+    width: 100%;
+    margin: 2px;
+    margin-top: 5px;
+}
+}

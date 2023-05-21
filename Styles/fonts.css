@@ -1,0 +1,45 @@
+.credit {
+  color: rgb(140, 140, 140);
+  font-size: 10px;
+}
+
+.Logo {
+  text-decoration: none;
+}
+
+.Intro-Title {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.Intro-text {
+  font-size: 25px;
+}
+
+.Identity-title {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.Projects-text,
+.Vision-title,
+.Identity-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+button.Vision-Button a,
+button.Projects-Button a,
+button.Identity-button a {
+  font-size: 20px;
+  text-decoration: double;
+}
+
+@media (max-width: 950px) {
+  .Intro-Title {
+    font-size: 40px;
+  }
+  .Intro-text {
+    font-size: 20px;
+  }
+}
