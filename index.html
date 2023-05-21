@@ -16,7 +16,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
-  </head><body>
+  </head>
+  <body>
     <header class="header">
       <div>
         <a class="Logo" href="https://rutgerpijnenburg.com">Rutger Pijnenburg</a>
@@ -26,13 +27,12 @@
       <div class="Navigation">
         <a class="Navigation-Identity" href="https://rutgerpijnenburg.com/Identity">Identity</a>
         <a class="Navigation-Vision" href="https://rutgerpijnenburg.com/Vision">Vision</a>
-        <a class="Navigation-Development" href="https://rutgerpijnenburg.com/Development">
-            Development </a>
+        <a class="Navigation-Development" href="https://rutgerpijnenburg.com/Development">Development </a>
         <a class="Navigation-Projects" href="https://rutgerpijnenburg.com/Projects">Projects</a>
       </div>
     </header>
     <div class="Starting-video">
-      <video class="BubbleVideo" src="/images/BubbleVideo4.mp4" autoplay loop muted></video>
+      <video class="BubbleVideo" src="/Portfolio/images/BubbleVideo4.mp4" autoplay loop muted></video>
       <div class="Introduction">
         <div class="Intro-Title">
           Rutger Pijnenburg</div>
@@ -49,25 +49,25 @@
 
     <section class="Identity">
       <div class="Identity-textpart">
-        
-      <div class="Identity-text">
-        <div class="Identity-title">Identity</div>
-        <div>I want to see different perspectives. 
-          I like trial and error (the iterative design process). 
-          I like thinking. My communication skill is my weakness. 
-          I have a passion for 3D-modelling</div>
-      </div>
+        <div class="Identity-text">
+          <div class="Identity-title">Identity</div>
+            <div>I want to see different perspectives. 
+              I like trial and error (the iterative design process). 
+              I like thinking. My communication skill is my weakness. 
+              I have a passion for 3D-modelling
+            </div>
+        </div>
       <div class="Identity-link">
 
       </div>
-        <a class="Read-more" href="https://rutgerpijnenburg.com/Identity/">Click to read more -></a>
+      <button class="Identity-button"><a href="https://rutgerpijnenburg.com/Identity/">Click to read more -></a></button>  
       </div>
+
       </div>
 
       <div class="Identity-image">
         <div class="Introduction-3D">
           <model-viewer interaction-prompt-style="basic" disable-tap auto-rotate auto-rotate-delay=1000 rotation-per-second=10deg disable-zoom src="untitled.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="2">
-          </button>
         </model-viewer>  
         <script src="script.js"></script>
         <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
@@ -78,23 +78,49 @@
     </section>
 
     <section class="Vision">
-      <div class="Vision-text">Vision</div>
-      <div class="Vision-link">
-        <a href="https://rutgerpijnenburg.com/Vision/">Click to read more -></a>
+      <div class="Vision-Main">
+        <div class="Vision-image"><img class="Image-Vision" src="/Portfolio/images/Bubbles.png" alt=""></div>
+        <div class="Vision-spacer"></div>
+        <div class="Vision-text">
+        <div class="Vision-title"> Vision</div>
+        <div>Design is a means that improves processes or helps others, It is a repeting process, since we design for people, who keep changing themselves</div>
+          <div class="Vision-link">
+            <button class="Vision-Button"><a href="https://rutgerpijnenburg.com/Vision/">Click to read more -></a></button>
+          </div>
+        </div>
       </div>
     </section>
 
     </section>
     <section class="Projects">
       <div class="Projects-text">Projects</div>
+      <div class="Project-images">
+        <div class="CreativeMechContainer">
+        <div><img class="CreativeMech" src="/Portfolio/images/CreativeMech.png" alt="">
+          <div class="CreativeMech-Title"> <center>Creative Mech</center></div>
+        </div></div>
+        <div class="FITDContainer">
+        <div><img class="FITD" src="/Portfolio/images/rocket.jfif" alt="">
+          <div class="CreativeMech-Title"><center>From idea to design</center></div>
+        </div></div>
+        <div class="Project1Container">
+        <div><img class="Project1" src="/Portfolio/images/Sketch jaydee render.png" alt="">
+          <div class="CreativeMech-Title"><center>Project 1</center></div>
+        </div></div>
+        <div class="CreativeElectronicsContainer">
+        <div><img class="CreativeElectronics" src="/Portfolio/images/table3.png" alt="">
+          <div class="CreativeMech-Title"><center>Creative electronics</center></div>
+        </div></div>
+      </div>
       <div class="Projects-link">
-        <a href="https://rutgerpijnenburg.com/Projects/">Click to read more -></a>
+        <button class="Projects-Button"><a href="https://rutgerpijnenburg.com/Projects/">Click to see more</a></button>
+        
       </div>
     </section>
 
 
     <section class="Contact">
-      <div class="contactname">Rutger Pijnenburg</div>
+      <div class="contactname">Contact</div>
       <div class="Adress">
         <a target="_blank" href="https://www.google.com/maps/place/Eindhoven"
           >Eindhoven, The Netherlands</a
