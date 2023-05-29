@@ -40,7 +40,7 @@
 }
 
 .headerspacer {
-  flex: 1;
+  flex: 2;
 }
 
 .Navigation-Identity,
@@ -57,4 +57,24 @@
 .Navigation-Development:hover,
 .Navigation-Projects:hover {
   color: rgb(0, 0, 0);
+}
+
+.Contact {
+  /* background-color: lightblue; */
+  background-color: #58c8cd;
+  background-color: #f2c6df;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.additionalcontact {
+  display: flex;
+  width: 120px;
+  justify-content: space-between;
+  object-fit: cover;
 }
