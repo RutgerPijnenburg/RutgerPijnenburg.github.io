@@ -43,3 +43,12 @@ button.Identity-button a {
     font-size: 20px;
   }
 }
+
+.CreativeMech-Title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+a.Download-Link {
+  color: black;
+}
