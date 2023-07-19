@@ -2,164 +2,868 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rutger Pijnenburg</title>
-    <link rel="stylesheet" href="/Styles/Header.css" />
-    <link rel="stylesheet" href="/Styles/general.css" />
-    <link rel="stylesheet" href="/Styles/images.css" />
-    <link rel="stylesheet" href="/Styles/Sections.css" />
-    <link rel="stylesheet" href="/Styles/fonts.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="/Styles/Navigation.css" />
+    <link rel="stylesheet" href="/Styles/Fonts.css" />
+    <link rel="stylesheet" href="/Styles/General.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="/images/R icon.ico">
+
+    <script>
+      function ProjectHover(state, title, number) {
+        if (state == 1) {
+          document.querySelector(`.ProjectTitle${number}`).innerHTML = title;
+        } else {
+          document.querySelector(`.ProjectTitle${number}`).innerHTML = "";
+        }
+      }
+
+      addEventListener("resize", (event) => {
+        document.getElementById("Hero").style.height = `${
+          window.innerHeight * 0.9
+        }px`;
+      });
+      addEventListener("load", (event) => {
+        document.getElementById("Hero").style.height = `${
+          window.innerHeight * 0.9
+        }px`;
+      });
+
+      function SwitchDevelopment(DevelopmentNumber) {
+        const Development = document.querySelector(".js-Development");
+        if (DevelopmentNumber == 0) {
+          Development.innerHTML = `
+          <section class="js-Development">
+            <p class="SectionTitle" id="Development">Development</p>
+            <div class="Row">
+              <div class="Development-Item" onclick="SwitchDevelopment('1')">
+                <p>Creativity and Aesthetics</p>
+              </div>
+              <div class="Development-Item" onclick="SwitchDevelopment('2')">
+                <p>Math, Data and Computing</p>
+              </div>
+              <div class="Development-Item" onclick="SwitchDevelopment(3)">
+                <p>Technology and realization</p>
+              </div>
+            </div>
+            <div class="Row">
+              <div class="Development-Item" onclick="SwitchDevelopment(4)">
+                <p>Design Research</p>
+              </div>
+              <div class="Development-Item" onclick="SwitchDevelopment(5)">
+                <p>User and Society</p>
+              </div>
+              <div class="Development-Item" onclick="SwitchDevelopment(6)">
+                <p>Business and Entrepreneurship</p>
+              </div>
+              <div class="Development-Item" onclick="SwitchDevelopment(7)">
+                <p>Professional skills</p>
+              </div>
+            </div>
+            <div class="Row">
+              <div class="Development-Item" onclick="SwitchDevelopment(8)">
+                <p>Professional Identity and Vision</p>
+              </div>
+              <div class="Development-Item" onclick="SwitchDevelopment(9)">
+                <p>Goals</p>
+              </div>
+              <div class="Development-Item" onclick="SwitchDevelopment(10)">
+                <p>External activities</p>
+              </div>
+            </div>
+          </section>
+          `;
+        } else if (DevelopmentNumber == 1) {
+          Development.innerHTML = `
+          <section>
+            <p class="SectionTitle">Development</p>
+            <div class="Development-Section">
+              <p class="SectionTitle">Creativity and Aesthetics</p>
+              <div class="BackButton" onclick="SwitchDevelopment('0')">
+                <p><</p>
+              </div>
+              <div class="Development-Row">
+                <p class="Development-Text">
+                  Creativity and aesthetics is one of the areas of expertise I am
+                  interested in improving, as I often find myself neglecting
+                  aesthetics while working on function, that is why I wanted to
+                  learn and improve this year. One of the ways in which I improved
+                  were certain assignments, assignments that did not have that big
+                  of an aesthetics side on their own, and introduced some art into
+                  them to experiment, for example for creative electronics we had to
+                  write a series of reports, for which I made cover pages. Doing
+                  this gave me the opportunity to work more with colour, but it also
+                  gave me the opportunity to test out fun stuff in Blender, I
+                  experimented with material light and geometry nodes (coding).
+                  Doing this gave me the opportunity to train my eye for design
+                  more, learn what works and what does not, which I will be able to
+                  use later on to make things look better, it also gave me some
+                  technical skills, which ties into technology and realization.
+                  There was one thing that worked less well, as I was working to
+                  much on experimenting under the excuse of working for the course,
+                  so for next time I will change one thing, I will introduce a
+                  maximum time to work on something like this, something like two
+                  hours, doing so will allow me to improve, without being a
+                  detriment to the other courses.
+                </p>
+                <div class="Development-Column">
+                  <img id="Bubbles" src="/Portfolio2/MainPage/images/Bubbles.png" alt="" />
+                  <p class="Caption">
+                    This came out of some experimentation in Blender
+                  </p>
+                </div>
+              </div>
+              <div class="Development-Row">
+                <div class="Development-Column">
+                  <img src="/Portfolio2/MainPage/images/Coverpage1.jpg" alt="" />
+                </div>
+                <div class="Development-Column">
+                  <img src="/Portfolio2/MainPage/images/Coverpage2.jpg" alt="" />
+                </div>
+                <div class="Development-Column">
+                  <img src="/Portfolio2/MainPage/images/Coverpage3.jpg" alt="" />
+                </div>
+                <div class="Development-Column">
+                  <img src="/Portfolio2/MainPage/images/Coverpage4.jpg" alt="" />
+                </div>
+                <div class="Development-Column">
+                  <img src="/Portfolio2/MainPage/images/Coverpage5.jpg" alt="" />
+                </div>
+              </div>
+              <p class="Caption" style="padding-left: 10px">
+                These are some of the Cover pages I made for creative electronics
+              </p>
+            </div>
+          </section>
+        `;
+        } else if (DevelopmentNumber == 2) {
+          Development.innerHTML = `
+            <section>
+              <p class="SectionTitle">Development</p>
+              <div class="Development-Section">
+                <p class="SectionTitle">Math, Data and Computing</p>
+                <div class="BackButton" onclick="SwitchDevelopment('0')">
+                  <p><</p>
+                </div>
+                <div class="Development-Row">
+                  <p class="Development-Text">
+                    Math, Data and Computing is one area of expertise I did not have
+                    much experience in so this year I laid the foundation. One of the
+                    courses that helped me with doing so was Data analytics for
+                    engineers, in this course I was taught the basics of handling
+                    data, I got the chance to create data frames, crunch data, and
+                    create graphs. This course went well for the biggest part as it
+                    uses methods from Technology and realisation to crunch numbers,
+                    something that was easy for me to wrap my head around, there was
+                    another part that went less well however, and that was the theory,
+                    specifically the terms, I had difficulty remembering them, this
+                    ties to how I generally remember things, I remember things by what
+                    they do, as a visual process, I know what type of plot is
+                    necessary for the job, but I do not know the name of said plot.
+                    This made the final test difficult, as I had to rely on my cheat
+                    sheet (allowed) to remember all terms. I think that this ties to
+                    my liking of the iterative design process, and my reliance on it,
+                    I am able to experiment with how things work, but not with what
+                    something is called. Next time I will try some other memorization
+                    methods, as these terms are necessary to communicate effectively,
+                    this may help me remember terms, but on the other side it will
+                    also take me a lot of time.
+                  </p>
+                  <div class="Development-Column">
+                    <img src="/Portfolio2/MainPage/images/Graph3.jpg" alt="" />
+                    <p class="Caption">
+                      This is a graph I made to challange myself, it shows the
+                      concentration of PM<sub>10</sub> for different wind directions
+                    </p>
+                  </div>
+                </div>
+                <div class="Development-Row">
+                  <div class="Development-Column">
+                    <img
+                      style="height: 190px"
+                      src="/Portfolio2/MainPage/images/Graph1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Development-Column">
+                    <img
+                      style="height: 190px"
+                      src="/Portfolio2/MainPage/images/Graph2.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <p style="padding: 0px 10px" class="Caption">
+                  These are two more graphs I made to research the influence of
+                  temperature on REM-sleep, I learned better how to handle data in the
+                  making of these
+                </p>
+              </div>
+            </section>
+          `;
+        } else if (DevelopmentNumber == 3) {
+          Development.innerHTML = `
+            <section>
+              <p class="SectionTitle">Development</p>
+              <div class="Development-Section">
+                <p class="SectionTitle">Technology and Realization</p>
+                <div class="BackButton" onclick="SwitchDevelopment('0')">
+                  <p><</p>
+                </div>
+                <div class="Development-Row">
+                  <p class="Development-Text">
+                    Technology and realisation is the expertise area which I like to
+                    work in the most, from coding, modelling and electronics I like to
+                    do them, that is why I want to improve in this area a lot more.
+                    One of the biggest contributions to this area of expertise this
+                    year were the challenges I have gotten in coding. I have worked on
+                    java for creative programming, a language I have used for a
+                    plethora of courses since then, mostly in prototypes, I have also
+                    learned how to handle a bit of python, which I now use to create
+                    graphs and visualizations for Math, Data, and computing. Lastly I
+                    have also learned HTML and CSS so I could make this portfolio. The
+                    way I have been learning these languages ties into my professional
+                    identity, firstly I like to learn, which has made it easier for me
+                    to spend a lot of extra time on this, secondly the way of
+                    learning, I have been using the iterative design process, in a
+                    way, I have been using a lot of trial-and-error to figure out a
+                    big part of coding. Another reason coding has been easier for me
+                    has been because I have been setting challenges for myself,
+                    choosing to code this portfolio for example, was a choice I made
+                    to learn more. All the coding so far has been a huge help, as I
+                    have been able to apply them to various prototypes, I have also
+                    been able to apply the methods to Blender, so it also applies to
+                    Creativity and Aesthetics. One thing that is less good is that I
+                    am spending a lot of time on this area, which on its own is not
+                    bad, but at times it means I spend less time working on other
+                    areas, I do like to specialize, but I also have to work on other
+                    areas, so next time I will set time slots in which I am only
+                    allowed to work on other areas of expertise.
+                  </p>
+                  <div class="Development-Column">
+                    <img
+                      id="TableHockey"
+                      src="/Portfolio2/MainPage/images/airhockey.jpg"
+                      alt=""
+                    />
+                    <p class="Caption">
+                      This is a airhockey table we built, We learned how to make
+                      interactive prototypes in this course
+                    </p>
+                  </div>
+                </div>
+                <div class="Development-Row">
+                  <!-- <div class="Development-Column">
+                    <img
+                      style="height: 200px"
+                      src="/Portfolio2/MainPage/images/Circuit.jpg"
+                      alt=""
+                    />
+                  </div> -->
+                  <div class="Development-Column">
+                    <img
+                      style="height: 300px"
+                      src="/Portfolio2/MainPage/images/Circuits.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="Development-Column">
+                    <img
+                      style="height: 300px"
+                      src="/Portfolio2/MainPage/images/CreateProgramming.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <p style="padding-left: 10px" class="Caption">
+                  A circuit and a game, both taught me how to make interactive systems
+                  in a playful way
+                </p>
+              </div>
+            </section>
+          `;
+        } else if (DevelopmentNumber == 4) {
+          Development.innerHTML = `
+          <section>
+            <p class="SectionTitle">Development</p>
+            <div class="Development-Section">
+              <p class="SectionTitle">Design Research</p>
+              <div class="BackButton" onclick="SwitchDevelopment('0')">
+                <p><</p>
+              </div>
+              <div class="Development-Row">
+                <p class='Development-Text'>
+                  This year I got the information skills course, for this course we learned
+                  how to better use the web and databases to search for papers and research
+                  to apply to projects. We learned how to set up better queries, and
+                  learning how to test for relevancy. The stuff I learned in this course
+                  will be relevant for many courses to come, as I am now better able to look
+                  for supporting research and set up better research papers of my own. One
+                  thing that went less well for me was how I had to reference, which is why
+                  I researched it for a bit and now I am able to do it.
+                </p>
+                <div class="Development-Column">
+                  <img src="/Portfolio2/MainPage/images/kirchhoff.png" alt="" />
+                  <p class="Caption">Placeholder</p>
+                </div>
+              </div>
+              <div class="Development-Row"></div>
+            </div>
+          </section>
+          `;
+        } else if (DevelopmentNumber == 5) {
+          Development.innerHTML = `
+          <section>
+            <p class="SectionTitle">Development</p>
+            <div class="Development-Section">
+              <p class="SectionTitle">User and Society</p>
+              <div class="BackButton" onclick="SwitchDevelopment('0')">
+                <p><</p>
+              </div>
+              <div class="Development-Row">
+                <p class="Development-Text">
+                  The biggest development for this area this year was for a USE
+                  course, the sustainability challenge, for this course we had to
+                  place ourselves into the position of all stakeholders involved
+                  with a certain case to look at what they would think about certain
+                  decisions, and involve their views into the design process, we
+                  also learned to work with some ethical models. The course has
+                  helped me look at things from more perspectives, while not
+                  throwing away the science behind choices. One thing that went less
+                  well was the theory, we had to apply the theory to our case, which
+                  could have gone better, I think it was mostly because of the lack
+                  of background knowledge, so for next time I will read more into
+                  the subject, to familiarize myself more with the dynamics between
+                  the stakeholders, as that would have made the course easier.
+                </p>
+                <div class="Development-Column">
+                  <img
+                    src="/Portfolio2/MainPage/images/Hierachal task analysis.jpg"
+                    alt=""
+                  />
+                  <p class="Caption">
+                    This is a Hierarchical task analysis we made to understand a
+                    process better, which we then used to design.
+                  </p>
+                </div>
+              </div>
+              <div class="Development-Row"></div>
+            </div>
+          </section>
+          `;
+        } else if (DevelopmentNumber == 6) {
+          Development.innerHTML = `
+          <section>
+            <p class="SectionTitle">Development</p>
+            <div class="Development-Section">
+              <p class="SectionTitle">Business and Entrepreneurship</p>
+              <div class="BackButton" onclick="SwitchDevelopment('0')">
+                <p><</p>
+              </div>
+              <div class="Development-Row">
+                <p class="Development-Text">
+                  Business and entrepreneurship is an area of expertise for which I
+                  have gotten only a few opportunities to grow, one of which was the
+                  co-creation workshop we did for project 1. In this workshop we had
+                  to involve other stakeholders into our process. We involved a
+                  therapist, someone who could tell us more about our target group
+                  and also possibilities of where our product could be used. Looking
+                  back this cocreation session was extremely helpful, it paved the
+                  way to what we ended up doing, helping with everything from
+                  direction to the aesthetics of our product. One thing that could
+                  have gone better was perhaps the moment we involved them, as we
+                  were already pretty far along and had to take a step backwards,
+                  losing some process, so for next time we will involve people
+                  sooner.
+                </p>
+                <div class="Development-Column">
+                  <img
+                    width="70%"
+                    src="/Portfolio2/MainPage/images/FeedbackCoCreation.jpg"
+                    alt=""
+                  />
+                  <p class="Caption">
+                    These are notes from a cocreationg session we had
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          `;
+        } else if (DevelopmentNumber == 7) {
+          Development.innerHTML = `
+          <section>
+            <p class="SectionTitle">Development</p>
+            <div class="Development-Section">
+              <p class="SectionTitle">Professional Skills</p>
+              <div class="BackButton" onclick="SwitchDevelopment('0')">
+                <p><</p>
+              </div>
+              <div class="Development-Row">
+                <p class="Development-Text">
+                  This year I have spent a considerable amount of time to improve my
+                  communication skill, the place where I mostly went to improve it was a
+                  culture association I am a part of. A goal I had set was to go at least
+                  once a week, something I wanted to do as my communication skill was just
+                  not cutting it, in this association I have had various conversations with
+                  people, conversations that gave me more perspectives, something I like and
+                  is part of my professional identity. This method has given me a way to
+                  improve my communication all the while I gained more perspectives on how
+                  to do tasks, as everyone comes from different studies, for example one
+                  person gave me what was basically a lecture on types of 3D printer
+                  filaments and another gave me history lectures, all this information will
+                  let me solve more types of problems.
+                </p>
+                <div class="Development-Column">
+                  <img src="/Portfolio2/MainPage/images/kirchhoff.png" alt="" />
+                  <p class="Caption">Placeholder</p>
+                </div>
+              </div>
+              <div class="Development-Row"></div>
+            </div>
+          </section>
+          `;
+        } else if (DevelopmentNumber == 8) {
+          Development.innerHTML = `
+          <section>
+            <p class="SectionTitle">Development</p>
+            <div class="Development-Section">
+              <p class="SectionTitle">Professional Identity and Vision</p>
+              <div class="BackButton" onclick="SwitchDevelopment('0')">
+                <p><</p>
+              </div>
+              <div class="Development-Row">
+                <p class="Development-Text">
+                  Text
+                </p>
+                <div class="Development-Column">
+                  <img src="/Portfolio2/MainPage/images/kirchhoff.png" alt="" />
+                  <p class="Caption">Placeholder</p>
+                </div>
+              </div>
+              <div class="Development-Row"></div>
+            </div>
+          </section>
+          `;
+        } else if (DevelopmentNumber == 9) {
+          Development.innerHTML = `
+          <section>
+            <p class="SectionTitle">Development</p>
+            <div class="Development-Section">
+              <p class="SectionTitle">Goals</p>
+              <div class="BackButton" onclick="SwitchDevelopment('0')">
+                <p><</p>
+              </div>
+              <div class="Development-Row">
+                <p class="Development-Text">
+                  For this year I had several goals and I made a lot of progress towards
+                  them. My first goal was to improve my communication skills, my plan was to
+                  do this by going outside of my comfort zone, to join an association and
+                  join activities regularly, and I followed this through, I joined Kinjin,
+                  where I joined an activity once a week and this helped me in improving
+                  communication, it gave me the chance to talk to new people on a weekly
+                  basis and gave me the opportunity to show who I was. From this goal I have
+                  gained some more confidence, but it is still not enough, so I will be
+                  continuing doing this. Another of my goals was to improve in Blender, I
+                  had planned to do this by 1, using Blender 3 times a week (30 min
+                  sessions) and joining competitions, I somewhat managed to do this first
+                  goal, doing way more at times, but none at others, but this second part I
+                  did not do at all, this was mostly because of procrastination, instead of
+                  setting a timeframe in which I will achieve this goal I will drop it and
+                  replace it with something different, I will set up a place on some social
+                  media to post progress updates or art, to show the world what I can do.
+                  The goals I set did help and I found it very nice to have a set amount of
+                  time after dinner which I can only use to do Blender and a few other tasks
+                  that I liked, doing this gave me more motivation, thus I will keep it in
+                  my routine.
+                </p>
+                <div class="Development-Column">
+                  <img src="/Portfolio2/MainPage/images/kirchhoff.png" alt="" />
+                  <p class="Caption">Placeholder</p>
+                </div>
+              </div>
+              <div class="Development-Row"></div>
+            </div>
+          </section>
+          `;
+        } else if (DevelopmentNumber == 10) {
+          Development.innerHTML = `
+            <section>
+              <p class="SectionTitle">Development</p>
+              <div class="Development-Section">
+                <p class="SectionTitle">External Activities</p>
+                <div class="BackButton" onclick="SwitchDevelopment('0')">
+                  <p><</p>
+                </div>
+                <div class="Development-Row">
+                  <p class='Development-Text'>
+                  This year I have gone to a couple of external activities to develop in
+                  several expertise areas, one example a workshop for Figma, in this
+                  workshop we were taught some of the basics for web development and they
+                  taught us the right way to think for making a website. I have been able to
+                  apply the knowledge learned from this workshop on this portfolio for
+                  example, as the way of thinking made it easier to learn CSS. I liked this
+                  workshop, which was to be expected, as I like to learn especially when it
+                  is about ways to think (new perspectives). I also went to a photoshop
+                  workshop, as I wanted to learn more creativity and aesthetics all the
+                  while learning how to use a very useful tool, however this workshop was a
+                  total bust, it only went into the very basics of the program, learning how
+                  to rotate something, or how to revert an action, so I did not learn
+                  anything, as these actions are the same for most programs. This workshop
+                  also annoyed me, as someone who likes to learn, as instead of learning
+                  processes which you could you how to create stuff, we learned how to
+                  create one specific thing using methods that everyone should have known,
+                  like copy pasting from the internet.
+                  </p>
+                  <div class="Development-Column">
+                    <img src="/Portfolio2/MainPage/images/kirchhoff.png" alt="" />
+                    <p class="Caption">Placeholder</p>
+                  </div>
+                </div>
+                <div class="Development-Row"></div>
+              </div>
+            </section>
+          `;
+        }
+      }
+
+      let x = 1;
+      let mouseX = 1;
+      // let mouseY = 1;
+      let frame = 100;
+      // let Brightness2 = 1;
+
+      // addEventListener("wheel", (event) => {
+      //   if (event.deltaY < 0) {
+      //     if (x > 1) {
+      //       x--;
+      //     }
+      //   } else {
+      //     x++;
+      //   }
+      //   Brightness = -0.00005 * x + 10;
+      //   document.getElementById("js-Hero-Image").style.filter = `brightness(${
+      //     Brightness2 * Brightness
+      //   }%)`;
+      // });
+      addEventListener("mousemove", (event) => {
+        mouseX = event.clientX;
+        mouseY = event.clientY;
+        // mouseY = event.clientY;
+        frame = Math.round((mouseX / window.innerWidth) * 89);
+        if (frame < 1) {
+          frame = 1;
+        }
+
+        document.getElementById(
+          "js-Hero-Image"
+        ).src = `/Portfolio2/MainPage/images/VideoTest/Landscape (${
+          frame + 1
+        }).jpg`;
+      });
+
+      addEventListener("wheel", (event) => {
+        if (document.documentElement.scrollTop > window.innerHeight * 0.95) {
+          document.querySelectorAll(".js-color").forEach((Each) => {
+            Each.style.color = "black";
+          });
+          document.querySelector(".Hero-Button").style.color = "black";
+          document.querySelector(".Hero-Button").style.border =
+            "2px solid black";
+        } else {
+          document.querySelectorAll(".js-color").forEach((Each) => {
+            Each.style.color = "white";
+          });
+          document.querySelector(".Hero-Button").style.color = "white";
+          document.querySelector(".Hero-Button").style.border =
+            "2px solid white";
+        }
+      });
+    </script>
   </head>
   <body>
-    <header class="header">
-      <div>
-        <a class="Logo" href="https://rutgerpijnenburg.com">Rutger Pijnenburg</a>
+    <div class="Navigation" id="Navigation">
+      <div class="Logo"><a href="#" class="js-color">Rutger Pijnenburg</a></div>
+      <div class="Navigation-Spacer"></div>
+      <div class="Navigation-Element">
+        <a href="#Identity" class="js-color">Identity</a>
       </div>
-      <div class="headerspacer"></div>
+      <div class="Navigation-Element">
+        <a href="#Vision" class="js-color">Vision</a>
       </div>
-      <div class="Navigation">
-<!--         <a class="Navigation-Identity" href="https://rutgerpijnenburg.com/IdentityVision/">PIV</a> -->
-        <!-- <a class="Navigation-Vision" href="https://rutgerpijnenburg.com/Vision">Vision</a> -->
-        <a class="Navigation-Development" href="https://rutgerpijnenburg.com/Development">Development </a>
-        <a class="Navigation-Projects" href="https://rutgerpijnenburg.com/Projects">Projects</a>
+      <div class="Navigation-Element">
+        <a href="#Projects" class="js-color">Projects</a>
       </div>
-    </header>
-    
-    <div class="Starting-video">
-      <video class="BubbleVideo" src="/images/BubbleVideo4.mp4" autoplay loop muted disablePictureInPicture></video>
-      <div class="Introduction">
-        <div class="Intro-Title">
-          Rutger Pijnenburg</div>
-        <div class="Intro-text">
-          <div>3D-modeller</div>
-          <div>Problem-solver</div>
-        </div>
+      <div class="Navigation-Element">
+        <a href="#Development" class="js-color">Development</a>
+      </div>
+      <div class="Navigation-Element">
+        <a href="mailto:r.a.pijnenburg@student.tue.nl"
+          ><button class="Hero-Button">Contact Me</button></a
+        >
       </div>
     </div>
 
-
-
-
-
-    <section class="Identity">
-      <div class="Identity-textpart">
-        <div class="Identity-text">
-          <div class="Identity-title">Identity</div>
-            <div>
-              <p>
-                My drive as a designer is to see different perspectives, this is because different perspectives offer me new ways to think, which I can use to solve problems I was not able to before or in different ways, be it faster, prettier or easier. They also allow me to understand others easier, letting me design or explain specifically to them. <br>
-                My favourite thing about design is the iterative design process, as I like to learn from my mistakes. This method works well for me as it teaches me fast, in a way I can understand, the only negative is that I want more iterations than I generally have time for. <br>
-                My passion is to 3D model, I like it and I do it often, I use Blender to model and I hope to use program, or method of creation in my future.
-              </p>
-            </div>
-        </div>
-      <div class="Identity-link">
-
-      </div>
-      <button class="Identity-button"><a href="/PDP4.docx" class="Download-Link">Click to download the entire text -></a></button>  
-      </div>
-
-      </div>
-
-      <div class="Identity-image">
-        <div class="Introduction-3D">
-          <model-viewer interaction-prompt-style="basic" disable-tap auto-rotate auto-rotate-delay=1000 rotation-per-second=10deg disable-zoom src="Myself.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1">
-        </model-viewer>  
-        <script src="script.js"></script>
-        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
-        <div class="Info3D">i
-          <div class="Information3D">Made with <a target="_blank" href="https://modelviewer.dev">model-viewer</a></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="Vision">
-      <div class="Vision-Main">
-        <div class="Vision-image"><img class="Image-Vision" src="/images/Bubbles.png" alt=""></div>
-        <div class="Vision-spacer"></div>
-        <div class="Vision-text">
-        <div class="Vision-title"> Vision</div>
-        <div>
-          <p>
-            I see design as a means that can help others or improve processes, something that keeps repeating and something that is never finished since the world and the people for which you design also always change.
-            I feel that designers must never stop learning, that there is never an endpoint, and that one can always improve a product or themselves.
-            I want to work more with 3D-modelling be it with printers or the actual models since I think these will become more necessary in the future.
-            For now, I am working towards making models for film or for games, this is because I like it when I see a design made in a way that I would have thought about, this also ties to my identity, where I said that my drive was to see different perspectives.
+    <div class="Content">
+      <section id="Hero">
+        <div class="Hero-Textbox">
+          <p class="Hero-Title1">I am</p>
+          <p class="Hero-Title2">Rutger Pijnenburg</p>
+          <p class="Hero-Content">
+            - 3D-modeller <br />
+            - Problem solver
           </p>
         </div>
-          <div class="Vision-link">
-            <button class="Vision-Button"><a href="/PDP4.docx" class="Download-Link">Click to download the entire text -></a></button>
+        <img
+          id="js-Hero-Image"
+          src="/Portfolio2/MainPage/images/VideoTest/Landscape (1).jpg"
+        />
+      </section>
+
+      <section id="Identity">
+        <p class="SectionTitle">Identity</p>
+        <div class="Development-Row">
+          <div class="Development-Column">
+            <p style="font-weight: normal; padding-right: 10px">
+              As a designer I strive to see different perspectives, this is
+              because these perspectives offer me new ways to think, new ways to
+              do, they allow me to solve more problems, or solve problems in
+              different ways, be it faster, prettier, or easier. They also allow
+              me to understand others better, letting me design for others
+              better, or to explain my thoughts better. Something I love about
+              design is the iterative design process, as I love to learn from my
+              mistakes, the method teaches me in a fast way, whilst still giving
+              me all information, it does sometimes come with a negative, as I
+              want to experiment too much at times, sometimes wanting to make
+              things better than what they have to be, which can take a lot of
+              time, I now iterate until something does everything it has to
+              decently, and come back only when there is time left to improve,
+              something I learned from various projects. I also love to learn, I
+              like to improve and explore, and will always find ways to
+              challenge myself, this also comes with a disadvantage, as I have
+              to force myself to make back-up plans, in case something goes
+              amiss, it also causes me to want to do less relevant stuff, for
+              example, for my last portfolio I learned how to code it, taking
+              away time from reflecting. My passion in design is 3D modelling,
+              something that is very dear to me and I love to do and hope that I
+              will be able to continue doing in the future.
+            </p>
+          </div>
+          <div class="Development-Column">
+            <img src="/Portfolio2/MainPage/images/kirchhoff.png" alt="" />
+            <p class="Caption">This is a placeholder</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    </section>
-    <section class="Projects">
-      <div class="Projects-text">Projects</div>
-      <div class="Project-images">
-        <div class="CreativeMechContainer">
-        <div><img class="CreativeMech" src="/images/CreativeMech.png" alt="">
-          <div class="CreativeMech-Title"> <center>Creative Mech</center></div>
-        </div></div>
-        <div class="FITDContainer">
-        <div><img class="FITD" src="/images/rocket.jfif" alt="">
-          <div class="CreativeMech-Title"><center>From idea to design</center></div>
-        </div></div>
-        <div class="Project1Container">
-        <div><img class="Project1" src="/images/Sketch jaydee render.png" alt="">
-          <div class="CreativeMech-Title"><center>Project 1</center></div>
-        </div></div>
-        <div class="CreativeElectronicsContainer">
-        <div><img class="CreativeElectronics" src="/images/table3.png" alt="">
-          <div class="CreativeMech-Title"><center>Creative electronics</center></div>
-        </div></div>
-      </div>
-      <div class="Projects-link">
-        <button class="Projects-Button"><a href="https://rutgerpijnenburg.com/Projects/">Click to see more</a></button>
-        
-      </div>
-    </section>
+      <section id="Vision">
+        <p class="SectionTitle">Vision</p>
+        <div class="Development-Row">
+          <div class="Development-Column">
+            <p style="font-weight: normal">
+              I see design as a means that can help others or improve processes,
+              something that keeps repeating and something that is never
+              finished since the world and the people for which you design also
+              always change. But one can not iterate forever, and sometimes you
+              have to realize that something will not work, just like the sunk
+              cost fallacy, the question is when this is the case, for me, it is
+              when you stop learning, which ties to my professional identity.
+              This also ties to another thing I feel is very important, I think
+              that we should never stop learning, designers especially, that
+              ties to my view on life and to my professional identity, since I
+              like the iterative design process. One example is the mindset used
+              and popularized by the Japanese, 改善 (kaizen) (improve) which is
+              a mindset in which people and companies strive for continuous
+              improvement, making processes easier and less taxing, mentally and
+              physically. The type of products I like the most are free
+              products, ones that can be used by everyone regardless of income,
+              I like these products because I want everyone to be able to learn,
+              to be able to improve and do what people like doing, these
+              products, however, do have a problem as they too must make money
+              to be able to keep running, there are multiple examples of
+              business models that have free products that I like, one example
+              is for the 3D modelling software I use, Blender, the company for
+              this software makes money by using donations, subscriptions, and
+              merchandise, but I realize that this is not possible for most
+              companies another example are creators on YouTube, who have given
+              a big part of a generation the chance to learn, these creators get
+              paid from ad revenue, merchandise, donations and some also give
+              more advanced courses.
+            </p>
+          </div>
+          <div class="Development-Column">
+            <p class="Kaizen">改<br />善</p>
+            <p class="Caption" style="text-align: center">
+              Kaizen, continuous improvement (of businesses and processes)
+            </p>
+          </div>
+        </div>
+      </section>
 
+      <section id="Projects">
+        <p class="SectionTitle">Projects</p>
+        <div class="Row">
+          <a href="https://rutgerpijnenburg.com" class="Project-Item">
+            <div
+              onmouseenter="ProjectHover(1, 'FITD', 6)"
+              onmouseleave="ProjectHover(2, '', 6)"
+            >
+              <div class="Project-Item-hover">
+                <img
+                  src="/Portfolio2/MainPage/images/FITD.jpg"
+                  alt="Placeholder"
+                />
+                <p id="ProjectTitle" class="ProjectTitle6"></p>
+              </div>
+            </div>
+          </a>
+          <a href="https://rutgerpijnenburg.com" class="Project-Item">
+            <div
+              onmouseenter="ProjectHover(1, 'Project1', 2)"
+              onmouseleave="ProjectHover(2, '', 2)"
+            >
+              <div class="Project-Item-hover">
+                <img
+                  src="/Portfolio2/MainPage/images/Project1.jpg"
+                  alt="Placeholder"
+                />
+                <p id="ProjectTitle" class="ProjectTitle2"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="Row">
+          <a href="https://rutgerpijnenburg.com" class="Project-Item">
+            <div
+              onmouseenter="ProjectHover(1, 'Creative programming', 5)"
+              onmouseleave="ProjectHover(2, '', 5)"
+            >
+              <div class="Project-Item-hover">
+                <img
+                  src="/Portfolio2/MainPage/images/CreateProgramming.jpg"
+                  alt="Placeholder"
+                />
+                <p class="ProjectTitle"></p>
+                <p id="ProjectTitle" class="ProjectTitle5"></p>
+              </div>
+            </div>
+          </a>
+          <a href="https://rutgerpijnenburg.com" class="Project-Item">
+            <div
+              onmouseenter="ProjectHover(1, 'Creative mech', 3)"
+              onmouseleave="ProjectHover(2, '', 3)"
+            >
+              <div class="Project-Item-hover">
+                <img
+                  src="/Portfolio2/MainPage/images/CreativeMech.jpg"
+                  alt="Placeholder"
+                />
+                <p id="ProjectTitle" class="ProjectTitle3"></p>
+              </div>
+            </div>
+          </a>
+          <a href="https://rutgerpijnenburg.com" class="Project-Item">
+            <div
+              onmouseenter="ProjectHover(1, 'Portfolio', 4)"
+              onmouseleave="ProjectHover(2, '', 4)"
+            >
+              <div class="Project-Item-hover">
+                <img
+                  src="/Portfolio2/MainPage/images/Portfolio.jpg"
+                  alt="Placeholder"
+                />
+                <p id="ProjectTitle" class="ProjectTitle4"></p>
+              </div>
+            </div>
+          </a>
+          <a href="https://rutgerpijnenburg.com" class="Project-Item">
+            <div
+              onmouseenter="ProjectHover(1, 'Creative Electronics', 1)"
+              onmouseleave="ProjectHover(2, '', 1)"
+            >
+              <div class="Project-Item-hover">
+                <img
+                  src="/Portfolio2/MainPage/images/CreativeElectronics.jpg"
+                  alt="Placeholder"
+                />
+                <p id="ProjectTitle" class="ProjectTitle1"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
 
-    <section class="Contact">
-      <div class="contactname">Contact</div>
-      <div class="Adress">
-        <a target="_blank" href="https://www.google.com/maps/place/Eindhoven"
-          >Eindhoven, The Netherlands</a
-        >
-      </div>
-      <div>
-        <a href="mailto:r.a.pijnenburg@student.tue.nl"
-          >r.a.pijnenburg@student.tue.nl</a
-        >
-      </div>
-      <div class="Phone">
-        <a target="_blank" href="tel:3640800253">+3640800253</a>
-      </div>
-      <div class="additionalcontact">
-        <a
-          target="_blank"
-          href="https://www.linkedin.com/in/rutger-pijnenburg-a9b1bb276/"
-          ><img class="contacticons" src="images/LinkedIn.png" alt=""
-        /></a>
-        <a target="_blank" href="https://wa.me/3640800253">
-          <img class="contacticons" src="images/Whatsapp.png" alt=""
-        /></a>
+      <section class="js-Development">
+        <p class="SectionTitle" id="Development">Development</p>
+        <div class="Row">
+          <div class="Development-Item" onclick="SwitchDevelopment('1')">
+            <p>Creativity and Aesthetics</p>
+          </div>
+          <div class="Development-Item" onclick="SwitchDevelopment('2')">
+            <p>Math, Data and Computing</p>
+          </div>
+          <div class="Development-Item" onclick="SwitchDevelopment(3)">
+            <p>Technology and realization</p>
+          </div>
+        </div>
+        <div class="Row">
+          <div class="Development-Item" onclick="SwitchDevelopment(4)">
+            <p>Design Research</p>
+          </div>
+          <div class="Development-Item" onclick="SwitchDevelopment(5)">
+            <p>User and Society</p>
+          </div>
+          <div class="Development-Item" onclick="SwitchDevelopment(6)">
+            <p>Business and Entrepreneurship</p>
+          </div>
+          <div class="Development-Item" onclick="SwitchDevelopment(7)">
+            <p>Professional skills</p>
+          </div>
+        </div>
+        <div class="Row">
+          <div class="Development-Item" onclick="SwitchDevelopment(8)">
+            <p>Professional Identity and Vision</p>
+          </div>
+          <div class="Development-Item" onclick="SwitchDevelopment(9)">
+            <p>Goals</p>
+          </div>
+          <div class="Development-Item" onclick="SwitchDevelopment(10)">
+            <p>External activities</p>
+          </div>
+        </div>
+      </section>
 
-        <a href="mailto:r.a.pijnenburg@student.tue.nl"
-          ><img class="contacticons" src="images/Mail.png" alt=""
-        /></a>
-      </div>
-      <div class="credit">©2023 by Rutger Pijnenburg</div>
-    </section>
+      <section id="Contact">
+        <p>Contact me!</p>
+        <div class="Adress">
+          <a target="_blank" href="https://www.google.com/maps/place/Eindhoven"
+            >Eindhoven, The Netherlands</a
+          >
+        </div>
+        <div>
+          <a href="mailto:r.a.pijnenburg@student.tue.nl"
+            >r.a.pijnenburg@student.tue.nl</a
+          >
+        </div>
+        <div class="Phone">
+          <a target="_blank" href="tel:3640800253">+3640800253</a>
+        </div>
+        <div class="additionalcontact">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/rutger-pijnenburg-a9b1bb276/"
+          ></a>
+          <a target="_blank" href="https://wa.me/3640800253"> Text me<br /></a>
+
+          <a href="mailto:r.a.pijnenburg@student.tue.nl">Mail me</a>
+        </div>
+        <div class="credit">©2023 by Rutger Pijnenburg</div>
+      </section>
+    </div>
   </body>
 </html>
