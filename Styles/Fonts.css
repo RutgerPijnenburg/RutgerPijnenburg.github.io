@@ -1,0 +1,87 @@
+.Logo a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  color: white;
+  padding: 10px;
+}
+
+.Logo a:hover {
+  opacity: 60%;
+}
+
+p,
+a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: black;
+}
+
+.Navigation-Element a {
+  padding: 10px;
+  transition: all 0.2s ease;
+  color: white;
+}
+
+.Navigation-Element a:hover {
+  opacity: 60%;
+}
+
+.Navigation-Element a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.SectionTitle {
+  font-size: xx-large;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.Development-Item p {
+  text-align: center;
+  margin: auto;
+}
+
+.Development-Item-Small p {
+  text-align: left;
+  margin: auto;
+}
+
+.Hero-Textbox p {
+  color: white;
+}
+
+.Hero-Title1 {
+  font-size: 15px;
+  display: inline-block;
+}
+
+.Hero-Title2 {
+  font-size: 40px;
+  display: inline-block;
+}
+
+.Hero-Content {
+  font-size: 30px;
+}
+
+.Development-Text {
+  font-weight: normal;
+  padding-right: 10px;
+  width: 60%;
+}
+
+.Caption {
+  font-weight: normal;
+  font-size: smaller;
+}
+
+.Kaizen {
+  text-align: center;
+  font-weight: normal;
+  font-size: 15em;
+  line-height: 1em;
+}

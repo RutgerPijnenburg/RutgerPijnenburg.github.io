@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 0.1rem;
+}
+
+body {
+  margin: 0;
+  padding-top: 4.1rem;
+  background-color: white;
+}
+.Navigation-Spacer {
+  flex: 1;
+  pointer-events: none;
+}
+
+.Navigation {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 1.5rem 0rem 1.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  z-index: 10000;
+  pointer-events: none;
+}
+
+.Navigation-Element {
+  padding: 0px 1.5rem;
+  display: inline-block;
+  pointer-events: visible;
+}
+
+.Logo {
+  pointer-events: visible;
+}

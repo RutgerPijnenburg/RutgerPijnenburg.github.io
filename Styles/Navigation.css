@@ -1,0 +1,202 @@
+Section {
+  /* background-color: rgb(248, 236, 219); */
+  background-color: rgb(32, 79, 180);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.Content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Content section {
+  width: 837px;
+}
+
+@media (max-width: 1000px) {
+  .Content section {
+    width: 85%;
+  }
+}
+
+.Row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Project-Item,
+.Development-Item,
+.Development-Item-Small {
+  background-color: white;
+  aspect-ratio: 1 / 1;
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  border-radius: 5px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.Development-Item-Small {
+  cursor: auto;
+  flex: 2;
+}
+
+.Development-Item:hover {
+  background-color: black;
+}
+
+.Development-Item:hover p {
+  color: white;
+}
+
+.Project-Item-hover {
+  background-color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 0;
+  transition: all 0.09s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 7px;
+}
+
+.Project-Item-hover:hover {
+  transform: scale(1.1);
+  z-index: 100;
+}
+
+.Project-Item-hover img {
+  height: 100%;
+  transition: all 0.08s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
+}
+
+.Project-Item-hover:hover img {
+  height: 74%;
+}
+
+#ProjectTitle {
+  text-align: center;
+  margin: auto;
+}
+
+#Hero {
+  height: 700px;
+}
+
+#js-Hero-Image {
+  top: 0px;
+  height: 100%;
+  position: absolute;
+  /* filter: brightness(50%); */
+  /* filter: hue-rotate(180deg); */
+  object-fit: cover;
+  width: 100%;
+  object-position: 65%;
+}
+
+@media (max-width: 800px) {
+  #js-Hero-Image {
+    object-position: 65%;
+  }
+}
+
+.Hero-Textbox {
+  position: absolute;
+  z-index: 100;
+  left: 15%;
+  top: 45%;
+  background-color: none;
+  padding: 20px;
+}
+
+.Hero-Button {
+  padding: 5px;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid white;
+  transition: all 0.15s;
+}
+
+.Hero-Button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.Development-Section {
+  position: relative;
+}
+
+.BackButton {
+  position: absolute;
+  top: 0px;
+  width: 4.3%;
+  aspect-ratio: 1/1;
+  left: 10px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: all 0.15s;
+  border: 2px solid white;
+}
+
+.BackButton:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.BackButton p {
+  color: white;
+}
+
+.Development-Row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 817px;
+  padding: 10px;
+}
+
+/* .Development-Row img {
+  width: 20%;
+  object-fit: contain;
+} */
+
+.Development-Column img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.Development-Column {
+  flex: 1;
+}
+
+#Bubbles {
+  height: 400px;
+  filter: contrast(1.8);
+}
+
+#TableHockey {
+  height: 440px;
+}
