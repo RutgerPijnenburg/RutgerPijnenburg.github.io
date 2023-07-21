@@ -10,7 +10,8 @@ html {
 body {
   margin: 0;
   padding-top: 4.1rem;
-  background-color: white;
+  background-color: rgb(255, 254, 241);
+  background-color: #e3f0ff;
 }
 .Navigation-Spacer {
   flex: 1;
@@ -39,4 +40,26 @@ body {
 
 .Logo {
   pointer-events: visible;
+}
+
+.js-color {
+  font-weight: bold;
+}
+
+#Contact {
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Contact-Buttons {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  height: 32%;
+}
+
+.Contact-Button img {
+  height: 100%;
 }
