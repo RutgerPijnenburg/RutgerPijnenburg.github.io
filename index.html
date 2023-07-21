@@ -34,9 +34,18 @@
         }px`;
       });
 
+      // addEventListener("load", (event) => {
+      //   if (window.documentElement.scrollTop > window.innerHeight * 0.87) {
+      //     console.log("white");
+      //   } else {
+      //     console.log("black");
+      //   }
+      // });
+
       function SwitchDevelopment(DevelopmentNumber) {
         const Development = document.querySelector(".js-Development");
         if (DevelopmentNumber == 0) {
+          //General
           Development.innerHTML = `
           <section class="js-Development">
             <p class="SectionTitle" id="Development">Development</p>
@@ -50,13 +59,13 @@
               <div class="Development-Item" onclick="SwitchDevelopment(3)">
                 <p>Technology and realization</p>
               </div>
+              <div class="Development-Item" onclick="SwitchDevelopment(5)">
+                <p>User and Society</p>
+              </div>
             </div>
             <div class="Row">
               <div class="Development-Item" onclick="SwitchDevelopment(4)">
                 <p>Design Research</p>
-              </div>
-              <div class="Development-Item" onclick="SwitchDevelopment(5)">
-                <p>User and Society</p>
               </div>
               <div class="Development-Item" onclick="SwitchDevelopment(6)">
                 <p>Business and Entrepreneurship</p>
@@ -64,21 +73,28 @@
               <div class="Development-Item" onclick="SwitchDevelopment(7)">
                 <p>Professional skills</p>
               </div>
-            </div>
-            <div class="Row">
               <div class="Development-Item" onclick="SwitchDevelopment(8)">
                 <p>Professional Identity and Vision</p>
               </div>
-              <div class="Development-Item" onclick="SwitchDevelopment(9)">
-                <p>Goals</p>
-              </div>
+            </div>
+            <div class="Row">
               <div class="Development-Item" onclick="SwitchDevelopment(10)">
                 <p>External activities</p>
+              </div>
+              <div class="Development-Item" onclick="SwitchDevelopment(12)">
+                <p>Past</p>
+              </div>
+              <div class="Development-Item" onclick="SwitchDevelopment(11)">
+                <p>Future</p>
+              </div>
+              <div class="Development-Item" onclick="SwitchDevelopment(9)">
+                <p>Goals</p>
               </div>
             </div>
           </section>
           `;
         } else if (DevelopmentNumber == 1) {
+          //Creativity and Aesthetics
           Development.innerHTML = `
           <section>
             <p class="SectionTitle">Development</p>
@@ -112,7 +128,7 @@
                   detriment to the other courses.
                 </p>
                 <div class="Development-Column">
-                  <img id="Bubbles" src="/images/Bubbles.png" alt="" />
+                  <img class="Bubbles" src="/images/Bubbles.jpg" alt="" />
                   <p class="Caption">
                     This came out of some experimentation in Blender
                   </p>
@@ -142,6 +158,7 @@
           </section>
         `;
         } else if (DevelopmentNumber == 2) {
+          //Math, Data and Computing
           Development.innerHTML = `
             <section>
               <p class="SectionTitle">Development</p>
@@ -207,6 +224,7 @@
             </section>
           `;
         } else if (DevelopmentNumber == 3) {
+          //Technology and Realization
           Development.innerHTML = `
             <section>
               <p class="SectionTitle">Development</p>
@@ -288,6 +306,7 @@
             </section>
           `;
         } else if (DevelopmentNumber == 4) {
+          //Design Reserch
           Development.innerHTML = `
           <section>
             <p class="SectionTitle">Development</p>
@@ -307,16 +326,13 @@
                   thing that went less well for me was how I had to reference, which is why
                   I researched it for a bit and now I am able to do it.
                 </p>
-                <div class="Development-Column">
-                  <img src="/images/kirchhoff.png" alt="" />
-                  <p class="Caption">Placeholder</p>
-                </div>
               </div>
               <div class="Development-Row"></div>
             </div>
           </section>
           `;
         } else if (DevelopmentNumber == 5) {
+          //User and Society
           Development.innerHTML = `
           <section>
             <p class="SectionTitle">Development</p>
@@ -357,6 +373,7 @@
           </section>
           `;
         } else if (DevelopmentNumber == 6) {
+          //Business and Entrepreneurship
           Development.innerHTML = `
           <section>
             <p class="SectionTitle">Development</p>
@@ -396,6 +413,7 @@
           </section>
           `;
         } else if (DevelopmentNumber == 7) {
+          //Professional Skills
           Development.innerHTML = `
           <section>
             <p class="SectionTitle">Development</p>
@@ -419,16 +437,17 @@
                   filaments and another gave me history lectures, all this information will
                   let me solve more types of problems.
                 </p>
-                <div class="Development-Column">
-                  <img src="/images/kirchhoff.png" alt="" />
-                  <p class="Caption">Placeholder</p>
-                </div>
+                  <div class="Development-Column">
+                    <img src="/images/kinjin.jpeg" alt="" />
+                    <p class="Caption">This is the logo of the association I am a part of and go to to improve my communication skill</p>
+                  </div>
               </div>
               <div class="Development-Row"></div>
             </div>
           </section>
           `;
         } else if (DevelopmentNumber == 8) {
+          //PIV
           Development.innerHTML = `
           <section>
             <p class="SectionTitle">Development</p>
@@ -438,19 +457,26 @@
                 <p><</p>
               </div>
               <div class="Development-Row">
-                <p class="Development-Text">
-                  Text
+                <p class="Development-Text"> 
+                  One of the biggest places where I have learned who I am and what my vision
+                  is, is on the PIV course, however I will talk about my portfolio. In my
+                  retake of my portfolio I got the chance to once again think a lot about my
+                  professional identity and vision, as in my first portfolio it was not
+                  enough, I knew my strengths and weaknesses, and the kind of products I
+                  liked, but nothing more, and after getting the feedback that was even more
+                  clear. From the feedback I got a couple of leads which I explored, and now
+                  my PIV is a bit more “NUANCED??”, however I feel that it is still not
+                  enough, thus I will have to explore more next year, I think that I will
+                  have to ask more questions, but also get more examples, so that my vision
+                  will come across more clearly.
                 </p>
-                <div class="Development-Column">
-                  <img src="/images/kirchhoff.png" alt="" />
-                  <p class="Caption">Placeholder</p>
-                </div>
               </div>
               <div class="Development-Row"></div>
             </div>
           </section>
           `;
         } else if (DevelopmentNumber == 9) {
+          //Goals
           Development.innerHTML = `
           <section>
             <p class="SectionTitle">Development</p>
@@ -483,8 +509,8 @@
                   my routine.
                 </p>
                 <div class="Development-Column">
-                  <img src="/images/kirchhoff.png" alt="" />
-                  <p class="Caption">Placeholder</p>
+                  <img class="Bubbles" src="/images/Bubbles.jpg" alt="" />
+                  <p class="Caption">This came out of one of the Blender sessions</p>
                 </div>
               </div>
               <div class="Development-Row"></div>
@@ -492,6 +518,7 @@
           </section>
           `;
         } else if (DevelopmentNumber == 10) {
+          //External Activities
           Development.innerHTML = `
             <section>
               <p class="SectionTitle">Development</p>
@@ -521,8 +548,94 @@
                   like copy pasting from the internet.
                   </p>
                   <div class="Development-Column">
-                    <img src="/images/kirchhoff.png" alt="" />
-                    <p class="Caption">Placeholder</p>
+                    <img src="/images/FigmaWorkshop.jpg" alt="" />
+                    <p class="Caption">This a part of the site we created for the figma workshop</p>
+                  </div>
+                </div>
+                <div class="Development-Row"></div>
+              </div>
+            </section>
+          `;
+        } else if (DevelopmentNumber == 11) {
+          //Future
+          Development.innerHTML = `
+            <section>
+              <p class="SectionTitle">Development</p>
+              <div class="Development-Section">
+                <p class="SectionTitle">Future</p>
+                <div class="BackButton" onclick="SwitchDevelopment('0')">
+                  <p><</p>
+                </div>
+                <div class="Development-Row">
+                  <p class='Development-Text'>
+                    I have set a couple of goals for the next year, the first of which is for
+                    professional skills, it has been steadily improving, so I just have to
+                    keep this up, improving my communication skill is perhaps the most
+                    important goal, as it will allow me to better voice my opinions, pitch or
+                    talk to people, to be specific I want to be able to be able to speak to
+                    slightly bigger groups, to achieve this I will go to my culture
+                    association at least once a week and talk to at least two people. The
+                    second goal is a mix between technology and realisation and creativity and
+                    aesthetics, I want to improve in both of these and to do this in a
+                    meaningful way I will make another portfolio that shows my skills better,
+                    making a portfolio will help me show what I am able to do and I hope it
+                    will help with employment. This portfolio will be an actual designer
+                    portfolio not a reflective text, to do this I will have to learn even more
+                    about the use of colour, fonts and other aesthetics related things, I will
+                    also learn more about coding, as I will have to learn JavaScript. I am
+                    planning on making the website more 3 dimensional, thus I will have to
+                    look into more ways of doing so, making the portfolio this way will show
+                    my competencies and love for 3D, to achieve this goal I will work on the
+                    portfolio for 90 minutes a week, 3 sessions of 30 minutes, I will start
+                    with some videos I have found and afterwards it will be a lot of
+                    experimentation. I will also be working on the other areas of expertise,
+                    for example for Business and entrepreneurship I have chosen the internet
+                    of things USE learning line, a learning line that focuses on group-based
+                    entrepreneurship and is focused on teaching how to develop a technological
+                    solution with emphasis on entrepreneurship.
+                  </p>
+                  <div class="Development-Column">
+                    <img src="/images/kinjin.jpeg" alt="" />
+                    <p class="Caption">This is the logo of the association I am a part of and go to to improve my communication skill</p>
+                  </div>
+                </div>
+                <div class="Development-Row"></div>
+              </div>
+            </section>
+          `;
+        } else if (DevelopmentNumber == 12) {
+          //Past
+          Development.innerHTML = `
+            <section>
+              <p class="SectionTitle">Development</p>
+              <div class="Development-Section">
+                <p class="SectionTitle">Past</p>
+                <div class="BackButton" onclick="SwitchDevelopment('0')">
+                  <p><</p>
+                </div>
+                <div class="Development-Row">
+                  <p class='Development-Text'>
+                    There have been a couple of design related activities I have done before I
+                    came to Eindhoven, the three examples all made who I am today, and they
+                    also show my professional identity, as they are the thing that made me
+                    love the iterative design process. One example comes from these sorts of
+                    electives I had on my previous school, for one I had to create a speaker,
+                    another taught me how 3D printers work and how to model and for the last I
+                    had to create a mouse trap powered car. These electives show what my
+                    interests were, or were perhaps the beginning of what my interests would
+                    be, they show my love for 3D modelling, as these electives were the first
+                    time I came into contact with it, it also shows my love for the iterative
+                    design process, as I can remember myself being annoyed at only having one
+                    chance. The other example was where I got my way of thinking from, from
+                    games like Minecraft, here I built a lot of contraptions machines to do
+                    certain tedious tasks for me, which links to technology and realisation,
+                    it also couples to business and entrepreneurship in a way, as I then sold
+                    products from these machines or the machines themselves, which taught me
+                    things about economy, how to sell effectively or how to grow.
+                  </p>
+                  <div class="Development-Column">
+                    <img src="/images/Speaker.jpg" alt="" />
+                    <p class="Caption">This is the speaker that I built on my previous school</p>
                   </div>
                 </div>
                 <div class="Development-Row"></div>
@@ -534,27 +647,13 @@
 
       let x = 1;
       let mouseX = 1;
-      // let mouseY = 1;
       let frame = 100;
-      // let Brightness2 = 1;
 
-      // addEventListener("wheel", (event) => {
-      //   if (event.deltaY < 0) {
-      //     if (x > 1) {
-      //       x--;
-      //     }
-      //   } else {
-      //     x++;
-      //   }
-      //   Brightness = -0.00005 * x + 10;
-      //   document.getElementById("js-Hero-Image").style.filter = `brightness(${
-      //     Brightness2 * Brightness
       //   }%)`;
       // });
       addEventListener("mousemove", (event) => {
         mouseX = event.clientX;
         mouseY = event.clientY;
-        // mouseY = event.clientY;
         frame = Math.round((mouseX / window.innerWidth) * 89);
         if (frame < 1) {
           frame = 1;
@@ -568,7 +667,11 @@
       });
 
       addEventListener("wheel", (event) => {
-        if (document.documentElement.scrollTop > window.innerHeight * 0.95) {
+        // console.log(event.wheelDelta);
+        if (
+          document.documentElement.scrollTop >
+          window.innerHeight * 0.87 + event.wheelDelta
+        ) {
           document.querySelectorAll(".js-color").forEach((Each) => {
             Each.style.color = "black";
           });
@@ -584,27 +687,50 @@
             "2px solid white";
         }
       });
+
+      function ChangeColour(state) {
+        if (state == 0) {
+          document.querySelectorAll(".js-color").forEach((Each) => {
+            Each.style.color = "black";
+          });
+          // ("2px solid black");
+        } else {
+          document.querySelectorAll(".js-color").forEach((Each) => {
+            Each.style.color = "white";
+          });
+        }
+      }
     </script>
   </head>
   <body>
     <div class="Navigation" id="Navigation">
-      <div class="Logo"><a href="#" class="js-color">Rutger Pijnenburg</a></div>
+      <div class="Logo">
+        <a href="#" class="js-color" onclick="ChangeColour(1)"
+          >Rutger Pijnenburg</a
+        >
+      </div>
       <div class="Navigation-Spacer"></div>
       <div class="Navigation-Element">
-        <a href="#Identity" class="js-color">Identity</a>
+        <a href="#Identity" class="js-color" onclick="ChangeColour(0)"
+          >Identity</a
+        >
       </div>
       <div class="Navigation-Element">
-        <a href="#Vision" class="js-color">Vision</a>
+        <a href="#Vision" class="js-color" onclick="ChangeColour(0)">Vision</a>
       </div>
       <div class="Navigation-Element">
-        <a href="#Projects" class="js-color">Projects</a>
+        <a href="#Projects" class="js-color" onclick="ChangeColour(0)"
+          >Projects</a
+        >
       </div>
       <div class="Navigation-Element">
-        <a href="#Development" class="js-color">Development</a>
+        <a href="#Development" class="js-color" onclick="ChangeColour(0)"
+          >Development</a
+        >
       </div>
       <div class="Navigation-Element">
         <a href="mailto:r.a.pijnenburg@student.tue.nl"
-          ><button class="Hero-Button">Contact Me</button></a
+          ><button class="Hero-Button">Mail Me</button></a
         >
       </div>
     </div>
@@ -620,6 +746,7 @@
           </p>
         </div>
         <img
+          draggable="false"
           id="js-Hero-Image"
           src="/images/VideoTest/Landscape (1).jpg"
         />
@@ -629,7 +756,7 @@
         <p class="SectionTitle">Identity</p>
         <div class="Development-Row">
           <div class="Development-Column">
-            <p style="font-weight: normal; padding-right: 10px">
+            <p style="padding-right: 10px">
               As a designer I strive to see different perspectives, this is
               because these perspectives offer me new ways to think, new ways to
               do, they allow me to solve more problems, or solve problems in
@@ -655,8 +782,13 @@
             </p>
           </div>
           <div class="Development-Column">
-            <img src="/images/kirchhoff.png" alt="" />
-            <p class="Caption">This is a placeholder</p>
+            <img src="/images/Spiderweb.jpg" alt="" />
+            <p class="Caption">
+              I see having a lot of different perspectives as a spider web, if
+              you have more perspectives you can take, then more problems will
+              be solvable by you, just as a web catches more if it covers more
+              area.
+            </p>
           </div>
         </div>
       </section>
@@ -665,7 +797,7 @@
         <p class="SectionTitle">Vision</p>
         <div class="Development-Row">
           <div class="Development-Column">
-            <p style="font-weight: normal">
+            <p>
               I see design as a means that can help others or improve processes,
               something that keeps repeating and something that is never
               finished since the world and the people for which you design also
@@ -708,7 +840,7 @@
       <section id="Projects">
         <p class="SectionTitle">Projects</p>
         <div class="Row">
-          <a href="https://rutgerpijnenburg.com" class="Project-Item">
+          <a href="https://rutgerpijnenburg.com/FITD" class="Project-Item">
             <div
               onmouseenter="ProjectHover(1, 'FITD', 6)"
               onmouseleave="ProjectHover(2, '', 6)"
@@ -722,7 +854,7 @@
               </div>
             </div>
           </a>
-          <a href="https://rutgerpijnenburg.com" class="Project-Item">
+          <a href="https://rutgerpijnenburg.com/Project1" class="Project-Item">
             <div
               onmouseenter="ProjectHover(1, 'Project1', 2)"
               onmouseleave="ProjectHover(2, '', 2)"
@@ -738,7 +870,10 @@
           </a>
         </div>
         <div class="Row">
-          <a href="https://rutgerpijnenburg.com" class="Project-Item">
+          <a
+            href="https://rutgerpijnenburg.com/CreativeProgramming"
+            class="Project-Item"
+          >
             <div
               onmouseenter="ProjectHover(1, 'Creative programming', 5)"
               onmouseleave="ProjectHover(2, '', 5)"
@@ -753,7 +888,10 @@
               </div>
             </div>
           </a>
-          <a href="https://rutgerpijnenburg.com" class="Project-Item">
+          <a
+            href="https://rutgerpijnenburg.com/CreativeMech"
+            class="Project-Item"
+          >
             <div
               onmouseenter="ProjectHover(1, 'Creative mech', 3)"
               onmouseleave="ProjectHover(2, '', 3)"
@@ -767,7 +905,7 @@
               </div>
             </div>
           </a>
-          <a href="https://rutgerpijnenburg.com" class="Project-Item">
+          <a href="https://rutgerpijnenburg.com/Portfolio" class="Project-Item">
             <div
               onmouseenter="ProjectHover(1, 'Portfolio', 4)"
               onmouseleave="ProjectHover(2, '', 4)"
@@ -781,7 +919,10 @@
               </div>
             </div>
           </a>
-          <a href="https://rutgerpijnenburg.com" class="Project-Item">
+          <a
+            href="https://rutgerpijnenburg.com/CreativeElectronics"
+            class="Project-Item"
+          >
             <div
               onmouseenter="ProjectHover(1, 'Creative Electronics', 1)"
               onmouseleave="ProjectHover(2, '', 1)"
@@ -810,13 +951,13 @@
           <div class="Development-Item" onclick="SwitchDevelopment(3)">
             <p>Technology and realization</p>
           </div>
+          <div class="Development-Item" onclick="SwitchDevelopment(5)">
+            <p>User and Society</p>
+          </div>
         </div>
         <div class="Row">
           <div class="Development-Item" onclick="SwitchDevelopment(4)">
             <p>Design Research</p>
-          </div>
-          <div class="Development-Item" onclick="SwitchDevelopment(5)">
-            <p>User and Society</p>
           </div>
           <div class="Development-Item" onclick="SwitchDevelopment(6)">
             <p>Business and Entrepreneurship</p>
@@ -824,45 +965,50 @@
           <div class="Development-Item" onclick="SwitchDevelopment(7)">
             <p>Professional skills</p>
           </div>
-        </div>
-        <div class="Row">
           <div class="Development-Item" onclick="SwitchDevelopment(8)">
             <p>Professional Identity and Vision</p>
           </div>
-          <div class="Development-Item" onclick="SwitchDevelopment(9)">
-            <p>Goals</p>
-          </div>
+        </div>
+        <div class="Row">
           <div class="Development-Item" onclick="SwitchDevelopment(10)">
             <p>External activities</p>
+          </div>
+          <div class="Development-Item" onclick="SwitchDevelopment(12)">
+            <p>Past</p>
+          </div>
+          <div class="Development-Item" onclick="SwitchDevelopment(11)">
+            <p>Future</p>
+          </div>
+          <div class="Development-Item" onclick="SwitchDevelopment(9)">
+            <p>Goals</p>
           </div>
         </div>
       </section>
 
       <section id="Contact">
-        <p>Contact me!</p>
-        <div class="Adress">
-          <a target="_blank" href="https://www.google.com/maps/place/Eindhoven"
-            >Eindhoven, The Netherlands</a
-          >
-        </div>
-        <div>
-          <a href="mailto:r.a.pijnenburg@student.tue.nl"
-            >r.a.pijnenburg@student.tue.nl</a
-          >
-        </div>
-        <div class="Phone">
-          <a target="_blank" href="tel:3640800253">+3640800253</a>
-        </div>
-        <div class="additionalcontact">
+        <p style="margin: 0px" class="SectionTitle">Contact me!</p>
+        <div class="Contact-Buttons">
           <a
-            target="_blank"
+            class="Contact-Button"
             href="https://www.linkedin.com/in/rutger-pijnenburg-a9b1bb276/"
-          ></a>
-          <a target="_blank" href="https://wa.me/3640800253"> Text me<br /></a>
-
-          <a href="mailto:r.a.pijnenburg@student.tue.nl">Mail me</a>
+          >
+            <img src="/images/linkedin.svg" alt="" />
+          </a>
+          <a
+            class="Contact-Button"
+            href="mailto:r.a.pijnenburg@student.tue.nl"
+            target="_top"
+          >
+            <img
+              src="/images/envelope.svg"
+              alt=""
+              target="_blank"
+            />
+          </a>
         </div>
-        <div class="credit">©2023 by Rutger Pijnenburg</div>
+        <div class="Credit">
+          <p>©2023 by Rutger Pijnenburg</p>
+        </div>
       </section>
     </div>
   </body>
