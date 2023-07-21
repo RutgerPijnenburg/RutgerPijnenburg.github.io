@@ -15,7 +15,7 @@ p,
 a {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
+  font-weight: normal;
   color: black;
 }
 
@@ -29,19 +29,16 @@ a {
   opacity: 60%;
 }
 
-.Navigation-Element a:hover {
-  text-decoration: none;
-  color: black;
-}
-
 .SectionTitle {
   font-size: xx-large;
-  margin-bottom: 10px;
+  font-weight: bold;
+  margin: 10px;
   text-align: center;
 }
 
 .Development-Item p {
   text-align: center;
+  font-weight: bold;
   margin: auto;
 }
 
@@ -62,6 +59,7 @@ a {
 .Hero-Title2 {
   font-size: 40px;
   display: inline-block;
+  font-weight: bold;
 }
 
 .Hero-Content {
@@ -84,4 +82,17 @@ a {
   font-weight: normal;
   font-size: 15em;
   line-height: 1em;
+}
+
+.Credit {
+  font-size: smaller;
+}
+
+.ProjectTitle1,
+.ProjectTitle2,
+.ProjectTitle3,
+.ProjectTitle4,
+.ProjectTitle5,
+.ProjectTitle6 {
+  font-weight: bold;
 }
