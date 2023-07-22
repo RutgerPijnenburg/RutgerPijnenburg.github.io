@@ -692,15 +692,18 @@
         if (state == 0) {
           document.querySelectorAll(".js-color").forEach((Each) => {
             Each.style.color = "black";
+            document.querySelector(".Hero-Button").style.color = "black";
+            document.querySelector(".Hero-Button").style.border =
+              "2px solid black";
           });
           // ("2px solid black");
         } else {
           document.querySelectorAll(".js-color").forEach((Each) => {
             Each.style.color = "white";
+            document.querySelector(".Hero-Button").style.color = "white";
+            document.querySelector(".Hero-Button").style.border =
+              "2px solid white";
           });
-          document.querySelector(".Hero-Button").style.color = "white";
-          document.querySelector(".Hero-Button").style.border =
-            "2px solid white";
         }
       }
     </script>
